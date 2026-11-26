@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Andria Gabadze</title>
+  <meta name="description" content="Web and design projects by Andria Gabadze.">
+  <meta name="author" content="Andria Gabadze">
+  <meta name="theme-color" content="#0b0c14">
+  <link rel="icon" type="image/svg+xml" href="images/brand/favicon.svg">
+  <!-- Plugins from the Orbitor template -->
+  <link rel="stylesheet" href="plugins/bulma/bulma.min.css">
+  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <!-- Base template styles (re-fonted) + custom dark theme -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<!-- navigation -->
+<div id="navbar" class="navigation py-4">
+  <div class="container">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item logo-text" href="index.html"><img src="images/brand/favicon.svg" alt=""><span class="wm">andria<b>.</b>dev</span></a>
+        <button type="button" class="navbar-burger burger" aria-label="Open menu" aria-expanded="false" data-target="navigation">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="navbar-menu" id="navigation">
+        <ul class="navbar-start ml-auto">
+          <li class="navbar-item"><a class="navbar-link is-arrowless" href="index.html">Home</a></li>
+          <li class="navbar-item"><a class="navbar-link is-arrowless" href="about.html">About</a></li>
+          <li class="navbar-item"><a class="navbar-link is-arrowless" href="services.html">Services</a></li>
+          <li class="navbar-item"><a class="navbar-link is-arrowless" href="projects.html">Projects</a></li>
+          <li class="navbar-item"><a class="navbar-link is-arrowless" href="journal.html">Journal</a></li>
+          <li class="navbar-item"><a class="navbar-link is-arrowless" href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="navbar-end ml-0">
+          <li class="navbar-item"><a href="contact.html" class="btn btn-main btn-small">Hire me <i class="ti-arrow-right"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- page title -->
+<section class="page-title">
+  <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="block has-text-centered">
+      <span class="eyebrow">Portfolio</span>
+      <h1>Things I&rsquo;ve <span class="grad-text">built</span></h1>
+      <p>Filter by type and open any card for the details.</p>
+      <ul class="list-inline breadcumb-nav">
+        <li class="list-inline-item"><a href="index.html">Home</a></li>
+        <li class="list-inline-item"><span>/</span></li>
+        <li class="list-inline-item"><span class="current">Projects</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filter-bar" role="group" aria-label="Filter projects">
+      <button type="button" class="active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="js" aria-pressed="false">JavaScript apps</button>
+      <button type="button" data-filter="design" aria-pressed="false">Design</button>
+      <button type="button" data-filter="web" aria-pressed="false">Websites</button>
+    </div>
+    <div class="columns is-multiline equal">
+      <div class="column is-4-desktop is-6-tablet project-col reveal d0" data-group="js">
+        <article class="project-card" data-long="A small dashboard that shows the current temperature and a five-day forecast for any city. My first project that reads live data from a public API." data-points="Fetches forecast data with the Fetch API|Remembers recent searches in localStorage|Cards turn into a list on phones" data-case="project-weather-now.html">
+          <div class="thumb"><img src="images/projects/weather.svg" alt="Weather Now preview"></div>
+          <div class="body">
+            <div class="tags"><span class="tag-chip">JavaScript</span><span class="tag-chip">API</span><span class="tag-chip">CSS Grid</span></div>
+            <h4>Weather Now</h4>
+            <p>Weather dashboard with a five-day forecast and city search.</p>
+            <button class="link-btn" type="button">View details <i class="ti-arrow-right"></i></button>
+          </div>
+        </article>
+      </div>
+      <div class="column is-4-desktop is-6-tablet project-col reveal d1" data-group="design">
+        <article class="project-card" data-long="A recipe finder concept: choose the ingredients you have and the page shows matching recipes. Designed in Figma first, then built as a static page." data-points="Designed mobile-first in Figma|Filter chips built with plain JavaScript|Colour contrast checked on every card" data-case="">
+          <div class="thumb"><img src="images/projects/recipes.svg" alt="Pantry Recipes preview"></div>
+          <div class="body">
+            <div class="tags"><span class="tag-chip">Figma</span><span class="tag-chip">HTML</span><span class="tag-chip">UX</span></div>
+            <h4>Pantry Recipes</h4>
+            <p>Tick what is in your fridge and get recipe ideas.</p>
+            <button class="link-btn" type="button">View details <i class="ti-arrow-right"></i></button>
+          </div>
+        </article>
+      </div>
+      <div class="column is-4-desktop is-6-tablet project-col reveal d2" data-group="js">
+        <article class="project-card" data-long="A minimal to-do list that keeps tasks between visits. It taught me how to structure state and re-render a list without a framework." data-points="Add, edit, complete and reorder tasks|Data kept in localStorage|Keyboard shortcuts for quick input" data-case="">
+          <div class="thumb"><img src="images/projects/todo.svg" alt="Focus List preview"></div>
+          <div class="body">
+            <div class="tags"><span class="tag-chip">JavaScript</span><span class="tag-chip">localStorage</span></div>
+            <h4>Focus List</h4>
+            <p>A calm to-do list with reordering, due dates and dark mode.</p>
+            <button class="link-btn" type="button">View details <i class="ti-arrow-right"></i></button>
+          </div>
+        </article>
+      </div>
+      <div class="column is-4-desktop is-6-tablet project-col reveal d0" data-group="js">
+        <article class="project-card" data-long="A quiz app for revising course material. Questions live in a JSON file, so new topics can be added without touching the code." data-points="Questions loaded from a JSON file|Answers shuffle on every try|Progress bar and final score screen" data-case="">
+          <div class="thumb"><img src="images/projects/quiz.svg" alt="Course Quiz preview"></div>
+          <div class="body">
+            <div class="tags"><span class="tag-chip">JavaScript</span><span class="tag-chip">JSON</span></div>
+            <h4>Course Quiz</h4>
+            <p>Multiple-choice revision quiz with a score bar.</p>
+            <button class="link-btn" type="button">View details <i class="ti-arrow-right"></i></button>
+          </div>
+        </article>
+      </div>
+      <div class="column is-4-desktop is-6-tablet project-col reveal d1" data-group="web">
+        <article class="project-card" data-long="A landing page from a class brief: hero, menu highlights, opening hours and a contact section, focused on clean responsive layout." data-points="Grid layout with custom breakpoints|Optimised SVG illustrations|Tested on phone, tablet and desktop" data-case="">
+          <div class="thumb"><img src="images/projects/landing.svg" alt="Café Landing Page preview"></div>
+          <div class="body">
+            <div class="tags"><span class="tag-chip">HTML</span><span class="tag-chip">CSS</span><span class="tag-chip">Responsive</span></div>
+            <h4>Café Landing Page</h4>
+            <p>Responsive landing page for a neighbourhood café.</p>
+            <button class="link-btn" type="button">View details <i class="ti-arrow-right"></i></button>
+          </div>
+        </article>
+      </div>
+      <div class="column is-4-desktop is-6-tablet project-col reveal d2" data-group="design web">
+        <article class="project-card" data-long="A personal design study: a gallery of colour palettes with one-click copying of hex codes. It is where I practise colour theory." data-points="Masonry-style CSS grid|Click a swatch to copy its hex code|Palettes inspired by photos" data-case="">
+          <div class="thumb"><img src="images/projects/gallery.svg" alt="Colour Gallery preview"></div>
+          <div class="body">
+            <div class="tags"><span class="tag-chip">CSS</span><span class="tag-chip">Design</span></div>
+            <h4>Colour Gallery</h4>
+            <p>A grid of colour palettes with copy-to-clipboard hex codes.</p>
+            <button class="link-btn" type="button">View details <i class="ti-arrow-right"></i></button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- project modal -->
+<div class="pmodal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+  <div class="box">
+    <button class="x" type="button" aria-label="Close"><i class="ti-close"></i></button>
+    <img src="images/projects/weather.svg" alt="">
+    <div class="inner">
+      <div class="tags"></div>
+      <h3 id="pmTitle" class="mb-3"></h3>
+      <p class="desc"></p>
+      <ul></ul>
+      <a class="btn btn-main btn-small case-link" href="project-weather-now.html">Read the full case study <i class="ti-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-4-widescreen is-6-tablet">
+        <div class="widget">
+          <a class="logo-text mb-4" href="index.html"><img src="images/brand/favicon.svg" alt=""><span class="wm">andria<b>.</b>dev</span></a>
+          <p class="mt-4">Student web developer and designer. I build clean, fast and friendly websites, and I&rsquo;m learning something new every week.</p>
+        </div>
+      </div>
+      <div class="column is-2-widescreen is-6-tablet ml-auto">
+        <div class="widget">
+          <h4 class="mb-4">Pages</h4>
+          <ul class="list-unstyled footer-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="journal.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+      </div>
+      <div class="column is-2-widescreen is-6-tablet">
+        <div class="widget">
+          <h4 class="mb-4">Featured</h4>
+          <ul class="list-unstyled footer-menu">
+            <li><a href="project-weather-now.html">Weather Now case study</a></li>
+            <li><a href="journal-ai-editor.html">Building this site with AI</a></li>
+            <li><a href="services.html#packages">Packages</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="column is-3-widescreen is-6-tablet">
+        <div class="widget">
+          <h4 class="mb-4">Get in touch</h4>
+          <p class="mb-4"><a href="mailto:andriagabadze826@gmail.com">andriagabadze826@gmail.com</a></p>
+          <div class="footer-socials"><a href="https://www.linkedin.com/in/andria-gabadze-677568338/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti-linkedin"></i></a><a href="https://github.com/andria1-source" target="_blank" rel="noopener" aria-label="GitHub"><i class="ti-github"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-btm py-5">
+      <p class="mb-0">&copy; <span class="year"></span> Andria Gabadze. Built on the <a href="https://themefisher.com/products/orbitor-bulma" target="_blank" rel="noopener">Orbitor template</a> by Themefisher, customised with AI.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="plugins/jquery/jquery.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
